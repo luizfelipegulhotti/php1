@@ -46,7 +46,7 @@
             <li><a href="agendamente.php" <?php echo (isset($_GET['page']) && $_GET['page'] == 'agendamento') ? 'class="active"' : ''; ?>>Agendamentos</a></li>
             <li><a href="?page=dizimo" <?php echo (isset($_GET['page']) && $_GET['page'] == 'dizimo') ? 'class="active"' : ''; ?>>Dízimo</a></li>
             <li><a href="eventos.php" <?php echo (isset($_GET['page']) && $_GET['page'] == 'eventos') ? 'class="active"' : ''; ?>>Eventos</a></li>
-            <li><a href="?page=horarios" <?php echo (isset($_GET['page']) && $_GET['page'] == 'horarios') ? 'class="active"' : ''; ?>>Horários</a></li>
+           
 
             <li class="dropdown">
                 <button class="btn-btn-secondary-dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

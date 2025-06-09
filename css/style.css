@@ -300,17 +300,136 @@ text-decoration: none;
   font-family: 'Arial', sans-serif; 
 margin-top: -10px;
 transition: transform 0.5s ease-in-out;
+z-index: 1001;
 
 }
 
 .dropdown-menu{
   background-color: #301212;
+  z-index: 1001;
 }
 
+.dropdown-menu{
+  z-index: 1001;
+  position: absolute
+}
+
+
+
+.navbar {
+  background-color: #301212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  position: relative; 
+  z-index: 1000; 
+}
+
+/* 2. Correção do dropdown container */
+.dropdown {
+  position: relative;
+  z-index: 1001; /* Z-index ainda maior para o dropdown */
+}
+
+.btn-btn-secondary-dropdown-toggle {
+  background-color: #301212 !important;
+  color: #D4B06A;
+  border: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 0; 
+  transition: transform 0.5s ease-in-out;
+  z-index: 1001;
+  position: relative;
+}
+
+.btn-btn-secondary-dropdown-toggle:hover {
+  background-color: #0c0404;
+  border-radius: 10px;
+  transform: scale(1.2);
+}
+
+
+.dropdown-menu {
+  background-color: #301212 !important;
+  border: 1px solid #D4B06A;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: absolute !important; 
+  top: 100% !important; 
+  left: 0;
+  min-width: 200px;
+  z-index: 1002 !important; 
+  display: none; 
+  margin: 0;
+  padding: 0;
+}
+
+
+.dropdown-menu.show {
+  display: block !important;
+  z-index: 1002 !important;
+}
+
+.dropdown-item {
+  background-color: #301212 !important;
+  color: #D4B06A !important;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #0c0404 !important;
+  color: #D4B06A !important;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  z-index: 1002 !important;
+}
+
+
+.container-agem,
+.form-container,
+.intro,
+.padres-grid,
+.padre-card {
+  position: relative;
+  z-index: 1; 
+}
+
+
+body .container-agem {
+  z-index: 1 !important;
+}
+
+
+.navbar .dropdown-menu {
+  position: fixed !important;
+  z-index: 10000 !important;
+  top: auto !important;
+  left: auto !important;
+}
+
+
+/* ================== FIM DA CORREÇÃO DO DROPDOWN ========================= */
 .btn-btn-secondary-dropdown-toggle:hover{
   background-color: #0c0404;
   border-radius: 10px;
   transform: scale(1.2);
+  z-index: 1001;
   
 }
 /* ================== fim estilo dropdaw ========================= */

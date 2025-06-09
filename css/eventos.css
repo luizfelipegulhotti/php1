@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }
 
 
@@ -123,7 +124,7 @@ button:hover {
 }
 
 .event-tag {
-    background-color: #30121281;
+    background-color: #ffffff81;
     padding: 0.25rem 0.75rem;
     border-radius: 999px;
     font-size: 0.875rem;
@@ -142,27 +143,27 @@ button:hover {
 
 .badge-missa {
     background-color: #30121294;
-    color: #301212;
+    color: #ffffff;
 }
 
 .badge-formacao {
-    background-color: #3012128c;
-    color: #301212;
+    background-color: #30121294;
+    color: #ffffff;
 }
 
 .badge-caridade {
-    background-color: #3012128c;
-    color: #301212;
+    background-color: #30121294;
+    color: #ffffff;
 }
 
 .badge-retiro {
     background-color: #3012128c;
-    color: #301212;
+    color: #ffffff;
 }
 
 .badge-festa {
     background-color: #3012128c;
-    color: #301212;
+    color: #ffffff;
     
 }
 
